@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정렬</title>
+    <style>
+        #horizon {
+            width: 300px;
+            text-align: center;
+            /* margin auto를 이용해서 div자체를 가운데로 정렬함 */
+            margin : 0 auto;
+        }
+
+        #wrap {
+            width: 500px;
+            height: 300px;
+            border: 1px solid gray;
+            /* text-align: center;블럭요소는 text-align으로 절대 안옮겨짐 */
+
+            display : flex;
+            justify-content: center;
+            /* 
+                display: flex, justify-content를 이용해서
+                가운데 정렬이 가능함.
+            */
+            align-items: center;
+            /* 수직 정렬 */
+        }
+
+        #container {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            /* margin: 0 auto; */
+        }
+    </style>
+</head>
+<body>
+    <div id="horizon">수평 정렬</div>
+    <div id="wrap">
+        <div id="container"></div>
+        <div id="article"></div>
+    </div>
+</body>
+</html>
